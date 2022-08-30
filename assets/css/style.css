@@ -1,0 +1,12 @@
+:root {
+    /* declare variables for colors and border sizing that are used repeatedly */
+    /* color scheme sourced from http://khroma.co/generator/ */
+    --dark: #1f588d;
+    --light: #afac89;
+}
+
+* {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
