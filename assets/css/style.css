@@ -64,11 +64,14 @@ nav ul {
     display: flex;
     justify-content: end;
     background-image: url("../images/banner-background.jpeg"); /* free-to-use image found on https://unsplash.com/photos/_JBKdviweXI */
-    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    height: 500px;
 }
 .banner-title {
     position: relative;
-    top: 150px;
+    top: 400px;
     height: 50px;
     background-color: var(--dark);
     color: var(--light-2);
