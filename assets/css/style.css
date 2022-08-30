@@ -4,6 +4,7 @@
     --dark: #1f3a72; /* Biscay */
     --light: #dbe3db; /* Tasman */
     --light-2: #b4c5cb; /* Loblolly */
+    --radius: 10px;
 }
 
 * {
@@ -37,6 +38,7 @@ nav ul {
     line-height: 1.5;
     padding: 5px 20px 5px 40px;
     font-weight: bolder;
+    border-radius: 0 var(--radius) var(--radius) 0;
 }
 
 .nav-bar {
@@ -56,4 +58,24 @@ nav ul {
 
 .nav-bar a:hover {
     border-bottom: solid var(--light-2) 3px;
+}
+
+.banner {
+    display: flex;
+    justify-content: end;
+    background-image: url("../images/banner-background.jpeg"); /* free-to-use image found on https://unsplash.com/photos/_JBKdviweXI */
+    height: 250px;
+}
+.banner-title {
+    position: relative;
+    top: 150px;
+    height: 50px;
+    background-color: var(--dark);
+    color: var(--light-2);
+    font-size: 1.75em;
+    line-height: 1.5;
+    padding: 5px 20px;
+    border-radius: var(--radius) 0 0 var(--radius);
+    font-weight: bolder;
+    width: 450px;
 }
