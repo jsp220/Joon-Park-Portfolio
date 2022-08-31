@@ -191,7 +191,10 @@ footer {
 }
 
 .aboutme-img {
-    width: 30%;
+    position: relative;
+    top: -10px;
+    width: 200px;
+    height: 200px;
 }
 
 .contact {
@@ -243,3 +246,25 @@ footer {
 .bold-title {
     font-weight: bolder;
 }
+
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    
+    .aboutme {
+        width: 100%;
+    }
+    
+    .contact {
+        width: 100%;
+    }
+    
+    .contact-text {
+        top: 0;
+    }
+
+    .contact-title {
+        top: -50px;
+    }
+  }
