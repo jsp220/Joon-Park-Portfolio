@@ -17,6 +17,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: var(--light-2);
+}
+
+h1 {
+    color: var(--dark);
+    font-size: 2.5em;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1.75em;
 }
 
 nav ul {
@@ -27,8 +38,6 @@ nav ul {
 footer {
     display: flex;
     flex-direction: row;
-    background-color: var(--light-2);
-
 }
 
 .header-format {
@@ -41,9 +50,6 @@ footer {
 
 .header-title {
     background-color: var(--light);
-    color: var(--dark);
-    font-size: 2.5em;
-    line-height: 1.5;
     padding: 5px 20px 5px 40px;
     font-weight: bolder;
     border-radius: 0 var(--radius) var(--radius) 0;
@@ -71,7 +77,7 @@ footer {
 .banner {
     display: flex;
     justify-content: end;
-    background-image: url("../images/banner-background.jpeg"); /* free-to-use image found on https://unsplash.com/photos/_JBKdviweXI */
+    background-image: url("../images/banner-background.webp"); /* free-to-use image found on https://www.freepik.com/free-vector/modern-banner-with-abstract-low-poly-design_16078483.htm#query=portfolio%20background&position=4&from_view=keyword */
     width: 100%;
     background-size: cover;
     background-position: top;
@@ -87,6 +93,79 @@ footer {
     padding: 5px 20px;
     border-radius: var(--radius) 0 0 var(--radius);
     width: 450px;
+}
+
+.mywork {
+    display: inline-block;
+    background-color: var(--light);
+    border: 3px solid var(--dark);
+    border-radius: var(--radius);
+    margin: 30px 1.25% 0px;
+}
+
+.mywork-title {
+    position: relative;
+    left: 1.25%;
+    top: -50px;
+    z-index: 1;
+    width: fit-content;
+    padding: 5px 10px;
+    border: 3px solid var(--dark);
+    border-radius: var(--radius);
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+.mywork-figures {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.mywork-featured {
+    position: relative;
+    top: -55px;
+    width: 100%;
+}
+
+.work-1-img,
+.work-2-img,
+.work-3-img {
+    width: 100%;
+}
+
+.work-1-img {
+    margin: auto;
+    height: 600px;
+    object-fit: none;
+}
+
+.mywork-regular {
+    width: 30%;
+}
+
+.work-2 {
+    left: 15%;
+}
+
+.mywork img:hover {
+    filter: blur(5px);
+}
+
+
+.aboutme-text {
+    margin: auto;
+    position: relative;
+    top: -50px;
+    width: 90%;
+    min-height: 100px;
+    background-color: var(--light);
+    border: 3px solid var(--dark);
+    border-radius: var(--radius);
+    padding: 25px 2% 10px;
+    color: var(--dark);
 }
 
 .aboutme {
@@ -115,7 +194,7 @@ footer {
     background-color: var(--light);
     border: 3px solid var(--dark);
     border-radius: var(--radius);
-    padding: 25px 2% 10px;
+    padding: 30px 2% 10px;
     color: var(--dark);
 }
 
@@ -130,12 +209,12 @@ footer {
     align-items: center;
     margin: auto;
     position: relative;
-    top: 54px;
+    top: 45px;
     width: 90%;
     min-height: 100px;
     border: 3px solid var(--dark);
     border-radius: var(--radius);
-    padding: 10px 2% 25px;
+    padding: 10px 2% 30px;
     background-color: var(--light);
     list-style: none;
 }
@@ -155,7 +234,7 @@ footer {
 .contact-title {
     position: relative;
     float: right;
-    right: 40px;;
+    right: 5%;
     z-index: 1;
     width: fit-content;
     padding: 5px 10px;
@@ -166,6 +245,5 @@ footer {
 }
 
 .bold-title {
-    font-size: 1.75em;
     font-weight: bolder;
 }
