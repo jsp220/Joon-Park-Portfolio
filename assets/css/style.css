@@ -154,20 +154,6 @@ footer {
     filter: blur(5px);
 }
 
-
-.aboutme-text {
-    margin: auto;
-    position: relative;
-    top: -50px;
-    width: 90%;
-    min-height: 100px;
-    background-color: var(--light);
-    border: 3px solid var(--dark);
-    border-radius: var(--radius);
-    padding: 25px 2% 10px;
-    color: var(--dark);
-}
-
 .aboutme {
     display: inline-block;
     width: 50%;
@@ -185,10 +171,12 @@ footer {
     color: var(--dark);
 }
 
-.aboutme-text {
-    margin: auto;
+.aboutme-content {
     position: relative;
     top: -50px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
     width: 90%;
     min-height: 100px;
     background-color: var(--light);
@@ -196,6 +184,14 @@ footer {
     border-radius: var(--radius);
     padding: 30px 2% 10px;
     color: var(--dark);
+}
+
+.aboutme-text {
+    width: 70%;
+}
+
+.aboutme-img {
+    width: 30%;
 }
 
 .contact {
